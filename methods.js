@@ -60,10 +60,19 @@ console.log(arrayFind.find(maxNum));
 function maxNum(num){
     return num > 20;
 }
+// Output: 31
 
 //array.findIndex()
 const arrayIndex = [6,8,16,32,21,34,22,29,37];
-console.log(arrayIndex.find(isGreater));
+console.log(arrayIndex.findIndex(isGreater));
 function isGreater(num){
     return num > 20;
+}
+// Output: 3
+
+//arry.findLast()
+const arrayLast = [6,8,16,32,21,34,22,29,37];
+console.log(arrayLast.findLast(isMore));
+function isMore(num){
+    return num > 30;
 }

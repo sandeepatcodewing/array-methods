@@ -324,13 +324,13 @@
         </p>
         <div class="examples">
           <div class="item-one">
-            <h5 id="example-11">Example No. 11:</h5>
+            <h5 id="example-12">Example No. 12:</h5>
             <code>
-              const arrayIndex = [6,8,16,32,21,34,22,29,37];
+              const arrayLast = [6,8,16,32,21,34,22,29,37];
               <br />
-              console.log(arrayFind.find(isGreater));
+              console.log(arrayFind.findIndex(isMore));
               <br />
-              function isGreater(num){
+              function isMore(num){
               <br />
               return num > 20;
               <br />
@@ -346,6 +346,38 @@
           In above example, you can see that "
           <code>.findIndex()</code>
           " returns the index of a number greater than 20 which is on index 3.
+        </p>
+      </li>
+      <!-- array.find -->
+      <li>
+        <p><b>array.findLast()</b></p>
+        <p>
+          It scans the whole array and print the last satisfied function elements of an array.
+        </p>
+        <div class="examples">
+          <div class="item-one">
+            <h5 id="example-12">Example No. 12:</h5>
+            <code>
+              const arrayIndex = [6,8,16,32,21,34,22,29,37];
+              <br />
+              console.log(arrayFind.findLast(isGreater));
+              <br />
+              function isGreater(num){
+              <br />
+              return num > 30;
+              <br />
+              }
+              <br />
+              <p class="output">Output:</p>
+              37
+              <br />
+            </code>
+          </div>
+        </div>
+        <p>
+          In above example, you can see that "
+          <code>.findLast()</code>
+          " scans the whole array and print the last elements that satisfied the function requirements.
         </p>
       </li>
     </ol>
