@@ -76,3 +76,4 @@ console.log(arrayLast.findLast(isMore));
 function isMore(num){
     return num > 30;
 }
+// Output: 37
