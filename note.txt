@@ -1,0 +1,10 @@
+array = ["fast", "faster", "fastest"]
+fast, faster, fastest are called elements of an array
+
+array = [
+    {
+        "Type" = "Car",
+        "Color" = "Dark Blue 
+    }
+]
+when we use "{}" in array it means that it is object and object always contains in key value pairs, which means in this case: "Type" is key and "Car" is value

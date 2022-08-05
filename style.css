@@ -1,0 +1,33 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* resetting header */
+h5, h6{
+    margin: 0rem;
+}
+
+.output{
+    margin: 1rem 0rem 0rem 0rem;
+}
+
+.examples{
+    width: 650px;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.item-one, .item-two{
+    border-radius: 16px;
+    padding: 16px;
+    background-color: #0000000d;
+}
+
+.h-100{
+    height: 100%;
+}
+
+ol > li::marker{
+    font-weight: bold;
+}
