@@ -85,3 +85,7 @@ function isMax(num){
     return num > 20;
 }
 // Output: 5
+
+//array.flat()
+const arrayFlat = [1,2,3,[[4,5,6]]];
+console.log(arrayFlat.flat(2));

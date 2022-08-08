@@ -427,6 +427,44 @@
           " returns the index value 5 i.e the last number which is greater than 20.
         </p>
       </li>
+      <!-- array.flat() -->
+      <li>
+        <p><b>array.flat()</b></p>
+        <p>
+          It is used to concatenate the nested array elements as per the requirements. For more clear concept let's see the examples
+        </p>
+        <div class="examples">
+          <div class="item-one">
+            <h5 id="example-14">Example No. 14:</h5>
+            <code>
+              const arrayFlat = [1,2,3,[4,5,6]];
+              <br />
+              console.log(arrayFlat.flat());
+              <br />
+              <p class="output">Output:</p>
+              [1,2,3,4,5,6]
+              <br />
+            </code>
+          </div>
+          <div class="item-two">
+            <h5 id="example-14.1">Example No. 14.1:</h5>
+            <code>
+              const arrayFlat = [1,2,3,[[4,5,6]]];
+              <br />
+              console.log(arrayFlat.flat(1));
+              <br />
+              <p class="output">Output:</p>
+              [1,2,3,[4,5,6]]
+              <br />
+            </code>
+          </div>
+        </div>
+        <p>
+          From the first example, you can see that "
+          <code>.flat()</code>
+          " concatenates the nested array elements into one. And, on second example you can see that the <code>"flat(1)"</code> is used to concatenate the nested elements upto number 1 i.e if there is 3 nested elements like <code>[1,2,[[[3,4,5]]]]</code> then it will be nested max one, i.e <code>[1,2[[3,4,5]]]</code>.
+        </p>
+      </li>
     </ol>
 
     <script src="methods.js"></script>
