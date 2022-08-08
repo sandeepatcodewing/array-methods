@@ -96,3 +96,8 @@ const arrayFlatmap = [1,2,[3,4],5,[6,7], [8]];
 console.log(arrayFlatmap.flatMap(num => num
 ));
 // Output: [1, 2, 3, 4, 5, 6, 7, 8]
+
+// array.foreach()
+const arrayForeach = [1,2,3,4,5,6];
+arrayForeach.forEach(element => console.log(element));
+// Output: 1 2 3 4 5 6
