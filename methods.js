@@ -130,3 +130,8 @@ for(key of arrayKeys){
 const arrayLastindexof = ["amazing", "awsome", "fighting", "analayze" , "amazing", "attack", "advance"];
 console.log(arrayLastindexof.lastIndexOf("amazing"));
 // Output: 4
+
+//array.map
+const arrayMap = [1,2,3,4];
+console.log(arrayMap.map(x => x * 2));
+// Output: [2,4,6,8]
