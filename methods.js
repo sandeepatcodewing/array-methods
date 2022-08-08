@@ -101,3 +101,8 @@ console.log(arrayFlatmap.flatMap(num => num
 const arrayForeach = [1,2,3,4,5,6];
 arrayForeach.forEach(element => console.log(element));
 // Output: 1 2 3 4 5 6
+
+// array.includes()
+const arrayIncludes = [1,2,3];
+console.log(arrayIncludes.includes(2));
+// Output: true

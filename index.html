@@ -13,6 +13,7 @@
       <img src="/up-arrow.png" alt="arrow" width="50">
     </button>
     <h4>Different Array methods</h4>
+    <!-- all methods link -->
     <div class="links">
       <ul>
         <li><a href="#example-1">Array.form()</a></li>
@@ -529,8 +530,34 @@
           <code>.forEach()</code> method uses to repeatedly called till a last element.
         </p>
       </li>
+      <!-- array.includes() -->
+      <li>
+        <p><b>array.icnludes()</b></p>
+        <p>
+          It is a boolean method which returns true if the requirement meets.
+        </p>
+        <div class="examples">
+          <div class="item-one">
+            <h5 id="example-17">Example No. 17:</h5>
+            <code>
+              const arrayIncludes = [1,2,3];
+              <br />
+              console.log(arrayIncludes.includes(2));
+              <br />
+              <p class="output">Output:</p>
+              true
+              <br />
+            </code>
+          </div>
+        </div>
+        <p>
+          From the example, you can see that "
+          <code>.icnludes()</code> method checks whether the integer 2 is present in the array and returns the boolean value i.e true as it is currently in the array.
+        </p>
+      </li>
     </ol>
 
+    <!-- scroll to top js -->
     <script>
       const buttonUp = document.querySelector(".btn-up");
       const btnDisplay = () => {
@@ -553,6 +580,7 @@
       });
     </script>
 
+    <!-- all methods js -->
     <script src="methods.js"></script>
   </body>
 </html>
