@@ -140,3 +140,8 @@ console.log(arrayMap.map(x => x * 2));
 const arrayReduce = [2,4,8,16];
 console.log(arrayReduce.reduce((total,current) => total + current));
 // Output: 30
+
+// array.reduceRight()
+const arrayReduceright = [[1,2],[3,4],[5,6]];
+console.log(arrayReduceright.reduceRight((total, current) => total.concat(current)));
+// Output: [5, 6, 3, 4, 1, 2]

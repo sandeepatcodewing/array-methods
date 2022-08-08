@@ -42,6 +42,8 @@
       <ul>
         <li><a href="#example-21">array.lastIndexOf()</a></li>
         <li><a href="#example-22">array.map()</a></li>
+        <li><a href="#example-23">array.reduce()</a></li>
+        <li><a href="#example-24">array.reduceRight()</a></li>
       </ul>
     </div>
     <hr>
@@ -723,6 +725,35 @@
         <p>
           From the example, you can see that "
           <code>.reduce()</code> method returns the total value after going through each elements of an array.
+        </p>
+      </li>
+      <!-- array.reduceRight() -->
+      <li>
+        <p><b>array.reduceRight()</b></p>
+        <p>
+          It is similar to <code>array.reduce()</code>, the only difference is that it approaches the elements from right to left. For more clear, see the example below
+        </p>
+        <p>
+          <h6>Syntax:</h6>
+          <code>reduceRight(total, currentValue, index, array)</code>
+        </p>
+        <div class="examples">
+          <div class="item-one">
+            <h5 id="example-24">Example No. 24:</h5>
+            <code>
+              const arrayReduceright = [[1,2],[3,4],[5,6]];
+              <br />
+              console.log(arrayReduceright.reduceRight((total, current) => total.concat(current)));
+              <br />
+              <p class="output">Output:</p>
+              [5, 6, 3, 4, 1, 2]
+              <br />
+            </code>
+          </div>
+        </div>
+        <p>
+          From the example, you can see that "
+          <code>.reduce()</code> method scans from right to left and returns the expected result.
         </p>
       </li>
     </ol>
