@@ -118,3 +118,10 @@ const arrayJoin = ["animal", "plant", "dog"];
 console.log(arrayJoin.join());
 console.log(arrayJoin.join(":"));
 // Output: animal,plant,dog animal:plant:dog
+
+// array.keys()
+const arrayKeys = ["animal", "plant", "dog"];
+for(key of arrayKeys){
+    console.log(key);
+}
+// Output: animal plant dog
