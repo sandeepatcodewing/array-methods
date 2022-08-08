@@ -89,3 +89,10 @@ function isMax(num){
 //array.flat()
 const arrayFlat = [1,2,3,[[4,5,6]]];
 console.log(arrayFlat.flat(2));
+// Output: [1,2,3,4,5,6]
+
+//array.flatMap()
+const arrayFlatmap = [1,2,[3,4],5,[6,7], [8]];
+console.log(arrayFlatmap.flatMap(num => num
+));
+// Output: [1, 2, 3, 4, 5, 6, 7, 8]
