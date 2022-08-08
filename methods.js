@@ -125,3 +125,8 @@ for(key of arrayKeys){
     console.log(key);
 }
 // Output: animal plant dog
+
+// array.lastIndexOf()
+const arrayLastindexof = ["amazing", "awsome", "fighting", "analayze" , "amazing", "attack", "advance"];
+console.log(arrayLastindexof.lastIndexOf("amazing"));
+// Output: 4
