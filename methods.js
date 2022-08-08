@@ -106,3 +106,8 @@ arrayForeach.forEach(element => console.log(element));
 const arrayIncludes = [1,2,3];
 console.log(arrayIncludes.includes(2));
 // Output: true
+
+// array.indexOf()
+const arrayIndexof = ["animal", "plant", "dog"];
+console.log(arrayIndexof.indexOf("plant"));
+console.log(arrayIndexof.indexOf("fruit"));
