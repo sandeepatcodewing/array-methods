@@ -111,3 +111,10 @@ console.log(arrayIncludes.includes(2));
 const arrayIndexof = ["animal", "plant", "dog"];
 console.log(arrayIndexof.indexOf("plant"));
 console.log(arrayIndexof.indexOf("fruit"));
+// Output: 1 -1
+
+// array.join()
+const arrayJoin = ["animal", "plant", "dog"];
+console.log(arrayJoin.join());
+console.log(arrayJoin.join(":"));
+// Output: animal,plant,dog animal:plant:dog
