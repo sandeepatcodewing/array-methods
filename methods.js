@@ -150,3 +150,8 @@ console.log(arrayReduceright.reduceRight((total, current) => total.concat(curren
 const arrayReverse = ["amazing", "awsome", "fighting", "analayze"];
 console.log("Reverse Method: " + arrayReverse.reverse());
 // Output: ['analayze', 'fighting', 'awsome', 'amazing']
+
+// array.slice
+const arraySlice = ["amazing", "awsome", "fighting", "analayze"];
+console.log("Slice Method: " + arraySlice.slice(2));
+// Output: fighting,analayze

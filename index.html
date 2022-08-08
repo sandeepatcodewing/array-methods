@@ -45,6 +45,7 @@
         <li><a href="#example-23">array.reduce()</a></li>
         <li><a href="#example-24">array.reduceRight()</a></li>
         <li><a href="#example-25">array.reverse()</a></li>
+        <li><a href="#example-26">array.slice()</a></li>
       </ul>
     </div>
     <hr>
@@ -772,7 +773,7 @@
               console.log(arrayReverse.reverse());
               <br />
               <p class="output">Output:</p>
-              ['analayze', 'fighting', 'awsome', 'amazing']
+              analayze,fighting,awsome,amazing
               <br />
             </code>
           </div>
@@ -780,6 +781,35 @@
         <p>
           From the example, you can see that "
           <code>.reverse()</code> method reverse the elements i.e first index will be now last and last index will be the first.
+        </p>
+      </li>
+      <!-- array.slice() -->
+      <li>
+        <p><b>array.slice()</b></p>
+        <p>
+          It is used to cut down the elements on the array as it required and returns modified elements of an array.
+        </p>
+        <p>
+          <h6>Syntax:</h6>
+          <code>slice(startingIndex, endingIndex)</code>
+        </p>
+        <div class="examples">
+          <div class="item-one">
+            <h5 id="example-26">Example No. 26:</h5>
+            <code>
+              const arraySlice = ["amazing", "awsome", "fighting", "analayze"];
+              <br />
+              console.log("Slice Method: " + arraySlice.slice(2));
+              <br />
+              <p class="output">Output:</p>
+              fighting,analayze
+              <br />
+            </code>
+          </div>
+        </div>
+        <p>
+          From the example, you can see that "
+          <code>.slice()</code> method cut down the first two elements from the array and returns the new array of elements.
         </p>
       </li>
     </ol>
