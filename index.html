@@ -9,22 +9,36 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
   </head>
   <body>
+    <button class="btn-up">
+      <img src="/up-arrow.png" alt="arrow" width="50">
+    </button>
     <h4>Different Array methods</h4>
-    <ul>
-      <li><a href="#example-1">Array.form()</a></li>
-      <li><a href="#example-2">array.length()</a></li>
-      <li><a href="#example-3">array.at()</a></li>
-      <li><a href="#example-4">array.concat()</a></li>
-      <li><a href="#example-5">array.copyWithin()</a></li>
-      <li><a href="#example-6">array.entries()</a></li>
-      <li><a href="#example-7">array.every()</a></li>
-      <li><a href="#example-8">array.fill()</a></li>
-      <li><a href="#example-9">array.filter()</a></li>
-      <li><a href="#example-10">array.find()</a></li>
-      <li><a href="#example-11">array.findInex()</a></li>
-      <li><a href="#example-12">array.findLast()</a></li>
-      <li><a href="#example-13">array.findLastIndex()</a></li>
-    </ul>
+    <div class="links">
+      <ul>
+        <li><a href="#example-1">Array.form()</a></li>
+        <li><a href="#example-2">array.length()</a></li>
+        <li><a href="#example-3">array.at()</a></li>
+        <li><a href="#example-4">array.concat()</a></li>
+        <li><a href="#example-5">array.copyWithin()</a></li>
+      </ul>
+      <ul>
+        <li><a href="#example-6">array.entries()</a></li>
+        <li><a href="#example-7">array.every()</a></li>
+        <li><a href="#example-8">array.fill()</a></li>
+        <li><a href="#example-9">array.filter()</a></li>
+        <li><a href="#example-10">array.find()</a></li>
+      </ul>
+      <ul>
+        <li><a href="#example-11">array.findInex()</a></li>
+        <li><a href="#example-12">array.findLast()</a></li>
+        <li><a href="#example-13">array.findLastIndex()</a></li>
+        <li><a href="#example-14">array.flat()</a></li>
+        <li><a href="#example-15">array.flatMap() -> Can't Understand</a></li>
+      </ul>
+      <ul>
+        <li><a href="#example-16">array.forEach()</a></li>
+      </ul>
+    </div>
     <hr>
     <ol>
       <!-- Array.form() -->
@@ -465,7 +479,7 @@
           " concatenates the nested array elements into one. And, on second example you can see that the <code>"flat(1)"</code> is used to concatenate the nested elements upto number 1 i.e if there is 3 nested elements like <code>[1,2,[[[3,4,5]]]]</code> then it will be nested max one, i.e <code>[1,2[[3,4,5]]]</code>.
         </p>
       </li>
-      <!-- array.flatMap() -->
+      <!-- array.flatMap() Need to ask mentor -->
       <li>
         <p><b>array.flatMap()</b></p>
         <p>
@@ -490,7 +504,54 @@
           <code>.flatMap()</code>.
         </p>
       </li>
+      <!-- array.forEach() -->
+      <li>
+        <p><b>array.forEach()</b></p>
+        <p>
+          It is used iterate the function for each elements which means that it calls the function for every elements on the array.
+        </p>
+        <div class="examples">
+          <div class="item-one">
+            <h5 id="example-16">Example No. 16:</h5>
+            <code>
+              const arrayForeach = [1,2,3,4,5,6];
+              <br />
+              arrayForeach.forEach(element => console.log(element));
+              <br />
+              <p class="output">Output:</p>
+              1 2 3 4 5 6
+              <br />
+            </code>
+          </div>
+        </div>
+        <p>
+          From the example, you can see that "
+          <code>.forEach()</code> method uses to repeatedly called till a last element.
+        </p>
+      </li>
     </ol>
+
+    <script>
+      const buttonUp = document.querySelector(".btn-up");
+      const btnDisplay = () => {
+        if(window.scrollY > 400){
+          buttonUp.style.display = "block";
+        }
+        else{
+          buttonUp.style.display = "none"
+        }
+      }
+      document.addEventListener("scroll", () =>{
+        btnDisplay();
+      });
+
+      buttonUp.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth"
+        });
+      });
+    </script>
 
     <script src="methods.js"></script>
   </body>
