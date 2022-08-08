@@ -145,3 +145,8 @@ console.log(arrayReduce.reduce((total,current) => total + current));
 const arrayReduceright = [[1,2],[3,4],[5,6]];
 console.log(arrayReduceright.reduceRight((total, current) => total.concat(current)));
 // Output: [5, 6, 3, 4, 1, 2]
+
+// array.reverse()
+const arrayReverse = ["amazing", "awsome", "fighting", "analayze"];
+console.log("Reverse Method: " + arrayReverse.reverse());
+// Output: ['analayze', 'fighting', 'awsome', 'amazing']
