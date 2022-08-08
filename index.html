@@ -41,6 +41,7 @@
       </ul>
       <ul>
         <li><a href="#example-21">array.lastIndexOf()</a></li>
+        <li><a href="#example-22">array.map()</a></li>
       </ul>
     </div>
     <hr>
@@ -693,6 +694,35 @@
         <p>
           From the example, you can see that "
           <code>.map()</code> method returns new array after invoking a function for every elements.
+        </p>
+      </li>
+      <!-- array.reduce() -->
+      <li>
+        <p><b>array.reduce()</b></p>
+        <p>
+          It is used to reduce the array to a single value and execute the function for each value of an array.
+        </p>
+        <p>
+          <h6>Syntax:</h6>
+          <code>reduce(total, currentValue, index, array)</code>
+        </p>
+        <div class="examples">
+          <div class="item-one">
+            <h5 id="example-23">Example No. 23:</h5>
+            <code>
+              const arrayReduce = [2,4,8,16];
+              <br />
+              console.log(arrayReduce.reduce((total,current) => total + current));
+              <br />
+              <p class="output">Output:</p>
+              30
+              <br />
+            </code>
+          </div>
+        </div>
+        <p>
+          From the example, you can see that "
+          <code>.reduce()</code> method returns the total value after going through each elements of an array.
         </p>
       </li>
     </ol>

@@ -135,3 +135,8 @@ console.log(arrayLastindexof.lastIndexOf("amazing"));
 const arrayMap = [1,2,3,4];
 console.log(arrayMap.map(x => x * 2));
 // Output: [2,4,6,8]
+
+// array.reduce
+const arrayReduce = [2,4,8,16];
+console.log(arrayReduce.reduce((total,current) => total + current));
+// Output: 30
