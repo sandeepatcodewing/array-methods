@@ -10,7 +10,22 @@
   </head>
   <body>
     <h4>Different Array methods</h4>
-
+    <ul>
+      <li><a href="#example-1">Array.form()</a></li>
+      <li><a href="#example-2">array.length()</a></li>
+      <li><a href="#example-3">array.at()</a></li>
+      <li><a href="#example-4">array.concat()</a></li>
+      <li><a href="#example-5">array.copyWithin()</a></li>
+      <li><a href="#example-6">array.entries()</a></li>
+      <li><a href="#example-7">array.every()</a></li>
+      <li><a href="#example-8">array.fill()</a></li>
+      <li><a href="#example-9">array.filter()</a></li>
+      <li><a href="#example-10">array.find()</a></li>
+      <li><a href="#example-11">array.findInex()</a></li>
+      <li><a href="#example-12">array.findLast()</a></li>
+      <li><a href="#example-13">array.findLastIndex()</a></li>
+    </ul>
+    <hr>
     <ol>
       <!-- Array.form() -->
       <li>
@@ -348,7 +363,7 @@
           " returns the index of a number greater than 20 which is on index 3.
         </p>
       </li>
-      <!-- array.find -->
+      <!-- array.findLast() -->
       <li>
         <p><b>array.findLast()</b></p>
         <p>
@@ -378,6 +393,38 @@
           In above example, you can see that "
           <code>.findLast()</code>
           " scans the whole array and print the last elements that satisfied the function requirements.
+        </p>
+      </li>
+      <!-- array.findLastIndex() -->
+      <li>
+        <p><b>array.findLastIndex()</b></p>
+        <p>
+          It is used to find the last index of an array. If it fails to do so, it returns -1 as output.
+        </p>
+        <div class="examples">
+          <div class="item-one">
+            <h5 id="example-13">Example No. 13:</h5>
+            <code>
+              const arrayLastindex = [6,8,4,22,29,37];
+              <br />
+              console.log(arrayLastindex.findLastIndex(isMax));
+              <br />
+              function isMax(num){
+              <br />
+              return num > 20;
+              <br />
+              }
+              <br />
+              <p class="output">Output:</p>
+              5
+              <br />
+            </code>
+          </div>
+        </div>
+        <p>
+          In above example, you can see that "
+          <code>.findLastIndex()</code>
+          " returns the index value 5 i.e the last number which is greater than 20.
         </p>
       </li>
     </ol>

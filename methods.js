@@ -77,3 +77,11 @@ function isMore(num){
     return num > 30;
 }
 // Output: 37
+
+//array.findLastIndex()
+const arrayLastindex = [6,8,4,22,29,37];
+console.log(arrayLastindex.findLastIndex(isMax));
+function isMax(num){
+    return num > 20;
+}
+// Output: 5
